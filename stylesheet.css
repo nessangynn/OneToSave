@@ -1,0 +1,105 @@
+.menu a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20pt;
+    margin-top: 20px;
+    font-weight: bold;
+
+}
+
+.menu input {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 30px;
+    margin-right: 16px;
+    font-size: 17pt;
+    background-color: lightgrey;
+}
+
+
+.news p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15pt;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgrey;
+    color: red;
+}
+
+.news button {
+    border: none;
+    background-color: lightgrey;
+    font-weight: bold;
+    font-size: 15pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    color: red;
+}
+
+.about {
+    margin: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about p {
+    font-size: 20pt;
+    margin: 16px;
+    
+}
+
+.about img {
+    padding-right: 10px;
+}
+
+.mission {
+    margin: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mission p {
+    font-size: 20pt;
+    margin: 16px;
+
+}
+
+.question {
+    margin: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+.question label{
+    font-size: 17pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.question input {
+    border: 3px solid lightgray;
+}
+
+.question textarea {
+    border: 3px solid lightgray;
+}
+
+.question form {
+    margin-left: 200px;
+}
+
+.question button {
+    border: 3px solid orange;
+    margin-left: 490px;
+    font-size: large;
+    padding: 10px 24px;
+    border-radius: 24px;
+    
+}
+
+.question button:hover{
+    background: orange;
+}
