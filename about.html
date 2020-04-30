@@ -1,133 +1,188 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en" >
 <head>
-    <!--This is title-->
-    <title>About</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/home.css">
+
+
+  <title>About</title>
+
 </head>
-
-
-<!--Question submit notic-->
-<script type="text/javascript">
-function formSubmit(){
-    var a = document.forms["myform"]["name"].value;
-    var b = document.forms["myform"]["email"].value;
-    var c = document.forms["myform"]["message"].value;
-
-    if (a == "" && b == "" && c=="") {
-    alert("You need to fill out the box with *");
-    return false;
-  }else{
-        alert("We receive you message!");
-        return true;
-    }
-
-}
-</script>
-
-<!--style sheet-->
-<link href="stylesheet.css" rel="stylesheet">
-
 <body>
-    <!--Menu part:logo, menu, search bar-->
 
-    <div class="menu">
+  <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
+      <a href="#" class="navbar-brand" ><img src="img/favicon.png" alt="OneToSave logo" width="30" height="30" class="d-inline-block align-top">ONE TO SAVE</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navLinks">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a href="home.html" class="nav-link">HOME</a>
+              </li>
+              <li class="nav-item">
+                  <a href="about.html" class="nav-link">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                  <a href="charities.html" class="nav-link">CHARITIES</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
 
-        <!--This is logo-->
-        <img src="logo.png" alt="logo" width="258" height="100">
+  <div class="hr big_size_hr">
+      <i class="fa fa-"></i>
+  </div>
 
-        <!--This is search bar-->
-        <input type="text" placeholder="Search..">
 
-        <!--This is menu-->
-        <a href="#About">About</a>
-        <a href="#Charities">Charities</a>
-        <a href="#home">Home</a>
+  <section id="team" class="text-center">
+    <div class="container">
+      <h2>Our <span class="text-danger ">Mission</span></h2>
+      <h5 class="lead">
+        A unique app as where presents current events as well as charitable
+              organizations, that have been verified, that link to those events.<br> 
+        Our goal is to save your time on filtering yourself with different kind of resources.
+      </h5>
 
+      <div class="hr big_size_hr">
+          <i class="fa fa-"></i>
+      </div>
+      <h2>Our <span class="text-danger">Team</span></h2>
+
+      <div class="hr">
+          <i class="fa fa-"></i>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4 mb-4">
+          <div class="team">
+            <div class="team-image">
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" class="img-fluid rounded-circle">
+              </a>
+              <div class="team-links">
+                <div class="team-links-list">
+                  <a href="#" target="_blank"><i class="fa fa-envelope"></i></a>
+                  <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a href="#" target="_blank"><i class="fa fa-linked"></i></a>
+                  <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div><!-- /.team-links-list -->
+              </div><!-- /.team-links -->
+            </div><!-- /.team-image -->
+            <div class="team-content">
+              <div class="team-name"><h5>Pauline Lee</h5></div>
+              <div class="team-role">Software Engineer</div>
+              <div class="team-description"></div>
+            </div><!-- /.team-content -->
+          </div><!-- /.team -->
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class="team">
+            <div class="team-image">
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1499887142886-791eca5918cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" class="img-fluid rounded-circle">
+              </a>
+              <div class="team-links">
+                <div class="team-links-list">
+                  <a href="#" target="_blank"><i class="fa fa-envelope"></i></a>
+                  <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a href="#" target="_blank"><i class="fa fa-linked"></i></a>
+                  <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div><!-- /.team-links-list -->
+              </div><!-- /.team-links -->
+            </div><!-- /.team-image -->
+            <div class="team-content">
+              <div class="team-name"><h5>Vanessa Nguyen</h5></div>
+              <div class="team-role">Software Engineer</div>
+              <div class="team-description"></div>
+            </div><!-- /.team-content -->
+          </div><!-- /.team -->
+        </div>
+
+        <div class="col-lg-4 mb-4">
+          <div class="team">
+            <div class="team-image">
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" class="img-fluid rounded-circle">
+              </a>
+              <div class="team-links">
+                <div class="team-links-list">
+                  <a href="#" target="_blank"><i class="fa fa-envelope"></i></a>
+                  <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                  <a href="#" target="_blank"><i class="fa fa-linked"></i></a>
+                  <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                </div><!-- /.team-links-list -->
+              </div><!-- /.team-links -->
+            </div><!-- /.team-image -->
+            <div class="team-content">
+              <div class="team-name"><h5>LiZhu Deng</h5></div>
+              <div class="team-role">Software Engineer</div>
+              <div class="team-description"></div>
+            </div><!-- /.team-content -->
+          </div><!-- /.team -->
+        </div>
+      </div>
+
+      <div class="hr big_size_hr">
+          <i class="fa fa-"></i>
+      </div>
+
+    </div><!-- /.container -->
+  </section>
+
+  <section class = "text-center">
+    <div class = "container-fluid ">
+        <!--Contact section: header, name, email, message input box, submit buttom-->
+      <div class="question">
+
+          <!--This is header-->
+          <h2>Contact us</h2>
+
+          <!--This is contact enter part-->
+          <form name="myform" action="/action_page.php" onsubmit="return formSubmit()" method="post" required>
+              <div>
+                  <label>Name*</label><br>
+                  <input type="text" name="name" size="50"><br><br>
+              </div>
+
+              <div>
+                  <label>Email address*</label><br>
+                  <input type="email" name="email" size="50"><br><br>
+              </div>
+
+              <div>
+                  <label>Message*<small>(Max 200 words)</small></label><br>
+                  <textarea name="message" rows="10" cols="50" maxlength="200"></textarea><br><br>
+              </div>
+          </form>
+
+          <!--This is submit botton-->
+          <button type="button" onclick=formSubmit()><strong>Submit Message</strong></button>
+      </div>
     </div>
+    </section>
 
-    
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
 
-    <!--Divion line:news, and more information button-->
-    <div class="news">
-        
-        <p> Support Covid-19 relief efforts!  <button type="button"
-                onclick="alert('more info')">MORE INFO
-               </button></p>
-        
-    </div>
-
-    <!--About section: header, OneToSave inforamtion, picture-->
-    <div class="about">
-
-        <!--This is header-->
-        <h1>About</h1>
-
-        <!--This is picture-->
-        <img src="yellow.png" alt="yellow" style="float:left" width="200" height="200">
-
-        <!--This is information-->
-        <p>
-            OneToSave allows users to be informed on the current catastrophes and issues that present challenges to
-            society, as well as connecting them to the organizations that support and are involved in the relief efforts
-            for those disasters and problems. Unlike other donation websites, OneToSave highlights various organizations
-            and recent catastrophes instead of having one single focal point. This application showcases important news
-            in a simple accessible way, one does not need to visit multiple websites to gain information or to donate to
-            different causes.
-        </p>
-
-    </div>
-
-    <br>
-    <br>
-    
-    <!--Mission senction: header, OneToSave mission, picture-->
-    <div class="mission">
-
-        <!--This is header-->
-        <h1 style="text-align: right">Our Mission</h1>
-
-        <!--This is picture-->
-        <img src="yellow.png" alt="yellow" style="float:right" width="200" height="200">
-
-        <!--This is mission-->
-        <p>This application is unique as it presents current events as well as charitable
-            organizations, that have been verified, that link to those events. This application saves users time as it
-            gives users a direct connection
-            to verified charities and organizations so that users do not need to filter through a list themselves.</p>
-    </div>
-
-    <br>
-    <br>
-    
-    <!--Contact section: header, name, email, message input box, submit buttom-->
-    <div class="question">
-
-        <!--This is header-->
-        <h1>Question?</h1>
-
-        <!--This is contact enter part-->
-        <form name="myform" action="/action_page.php" onsubmit="return formSubmit()" method="post" required>
-            <div>
-                <label><strong>Name*</strong></label><br>
-                <input type="text" name="name" size="50"><br><br>
-            </div>
-
-            <div>
-                <label><strong>Email address*</strong></label><br>
-                <input type="email" name="email" size="50"><br><br>
-            </div>
-
-            <div>
-                <label><strong>Message*</strong><small>(Max 200 words)</small></label><br>
-                <textarea name="message" rows="14" cols="100" maxlength="200"></textarea><br><br>
-            </div>
-        </form>
-
-        <!--This is submit botton-->
-        <button type="button" onclick=formSubmit()><strong>Submit Message</strong></button>
-    </div>
-
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js'></script>
+    <script  src="js/script.js"></script>
 </body>
-
 </html>
