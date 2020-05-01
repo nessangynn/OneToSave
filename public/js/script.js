@@ -11,7 +11,7 @@ var Swipes = new Swiper('.swiper-container', {
     },
 });
 // ABOUT PAGE
-// Contact us form 
+// Contact us form
 function formSubmit(){
     var a = document.forms["myform"]["name"].value;
     var b = document.forms["myform"]["email"].value;
@@ -26,3 +26,5 @@ function formSubmit(){
     }
 
 };
+
+// CHARITIES PAGE
