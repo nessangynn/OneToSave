@@ -6,10 +6,11 @@
     box-sizing: border-box;
 }
 
-html {
-    background-color: #fff;
-    color: #ff871f;
-    font-family: 'Lato', 'Arial', sans-serif;
+body {
+    background: #FFDAB9;
+    /* #FFDAB9 */
+    font-family: "Nunito", sans-serif;
+    color: #e67e22;
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
@@ -21,13 +22,12 @@ html {
 .row {
     max-width: 1140px;
     margin: 0 auto;
-    
 }
 
 .rowHeader {
     position: absolute;
     width: 1140px;
-    top: 18%;
+    top: 15%;
     left: 30%;
     transform: translate(-50%, -50%);
 }
@@ -45,7 +45,7 @@ h1{
 } 
 
 header {
-    padding: 4%;
+    padding: 2%;
     margin: 0;
 }
 
@@ -55,16 +55,9 @@ h2 {
     letter-spacing: 1px;
     font-weight: 400;
     color: #e67e22;
-    margin-top: 7%;
+    margin-top: 5%;
+    margin-left: 5%;
     
-}
-
-p {
-    color: #000;
-    word-spacing: 2px;
-}
-a {
-    color: #e67e22;
 }
 
 .email {
@@ -72,17 +65,10 @@ a {
     width: 1140px;
     left: 75%;
     font-size: 30px;
-    top: 20px;
+    top: 10px;
  }
 
 /*----------TAB BAR-----------*/
-.logo {
-    height: 80px;
-    width: auto;
-    float: left;
-    margin-top: 20px;
-    
-}
 .tab-bar {
     float: right;
     list-style: none;
@@ -123,22 +109,41 @@ a {
 }
 
 /*-----PARAGRAPHS------*/
-.row-section {
+.row-section1 img,
+.row-section2 img,
+.row-section3 img,
+.row-section4 img,
+.row-section5 img {
+    margin: 2%;
+    
+}
+
+.row-section1 p,
+.row-section2 p,
+.row-section3 p,
+.row-section4 p,
+.row-section5 p {
     color: #000;
     font-weight: 500;
-    margin-left: 5%;
+    font-size: 20pt;
+    margin: 16px;
+    padding: 2%;
 }
+
 
 /*-------EXTERNAL-LINKS----------*/
 
 .btn:link,
 .btn:visited {
-    display: inline-block;
-    padding: 10px 30px;
-    font-weight: 300;
+    padding: .5%;
+    font-weight: 400;
     text-decoration: none;
-    border-radius: 200px;
+    border-radius: 0px;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.row-section4 .btn-testOne:link,
+.row-section2 .btn-testOne:link {
+    float: right;
 }
 .btn-testOne:link,
 .btn-testOne:visited {
@@ -157,10 +162,3 @@ a {
 
 /*-------IMAGES---------*/
 
-.feature-left {
-    display: block;
-    max-width:100%;
-    height:auto;
-    padding: 10px 20px;
-    object-fit: contain;
-}
