@@ -1,7 +1,26 @@
+// Your web app's Firebase configuration
+
+var firebaseConfig = {
+  apiKey: "AIzaSyAE1DagAv8qN8_nUzMhKCezSz9hoNBIgC0",
+  authDomain: "onetosave-cd865.firebaseapp.com",
+  databaseURL: "https://onetosave-cd865.firebaseio.com",
+  projectId: "onetosave-cd865",
+  storageBucket: "onetosave-cd865.appspot.com",
+  messagingSenderId: "668764127740",
+  appId: "1:668764127740:web:5122e830c03bac5fd93279",
+  measurementId: "G-1W04YL0FJM"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+const db = firebase.firestore();
+
 // Search bar
 if (typeof jQuery === "undefined") { 
     throw new Error("jQuery required"); 
 }
+
 
 (function($) {
   
@@ -21,6 +40,9 @@ if (typeof jQuery === "undefined") {
     
   })(jQuery);
 
+
+
+
 // HOME PAGE
 // Swiper function for home page
 var Swipes = new Swiper('.swiper-container', {
@@ -33,21 +55,69 @@ var Swipes = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
     },
 });
+
+
+const otherForm=document.querySelector('#subscribeI,#subscribeC');
+otherForm.addEventListener('submit',(e)=>{
+  e.preventDefault();
+  db.collection('subscribe').add({
+    address: otherForm.address.value
+  })
+  otherForm.address.value="";
+})
+
+
+
+
+
+
 // ABOUT PAGE
 // Contact us form
-function formSubmit(){
-    var a = document.forms["myform"]["name"].value;
-    var b = document.forms["myform"]["email"].value;
-    var c = document.forms["myform"]["message"].value;
 
-    if (a == "" | b =="" | c=="") {
-    alert("You need to fill out the box with *");
-    return false;
-  }else{
-        alert("We receive you message!");
-        return true;
-    }
 
-};
+
+//const class = document.querySelector('')
+//get data
+db.collection('contact').get().then((snapshot)=>{
+  snapshot.docs.forEach(doc=>{
+    console.log(doc.data())
+  })
+})
+db.collection('subscribe').get().then((snapshot)=>{
+  snapshot.docs.forEach(doc=>{
+    console.log(doc.data())
+  })
+})
+
+
+//saving data
+const form = document.querySelector('#add-contact-form');
+
+form.addEventListener('submit', (e) =>{
+  e.preventDefault();
+  db.collection('contact').add({
+      name: form.name.value,
+      email: form.email.value,
+      subject: form.subject.value,
+      message: form.message.value 
+  })
+  form.name.value = "";
+  form.email.value = "";
+  form.subject.value="";
+  form.message.value="";
+})
+
+const anotherForm=document.querySelector('#subscribe');
+
+anotherForm.addEventListener('submit',(e)=>{
+  e.preventDefault();
+  db.collection('subscribe').add({
+    address: anotherForm.address.value
+  })
+  anotherForm.address.value="";
+})
+
+
 
 // CHARITIES PAGE
+
