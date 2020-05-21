@@ -41,6 +41,17 @@
                 </li>
                 <li class="nav-item">
                     <a href="charities.html" class="nav-link">CHARITIES</a>
+                    <li class="nav-item">
+                      <button class="accordion">NEWS</button>
+                      <div class ="panel">
+                          <a href="news.html" class="nav-link">Unicef</a>
+                          <a href="dr.html" class="nav-link">Direct Relief</a>
+                          <a href="pbs.html" class="nav-link">PBS</a>
+                          <a href="wwf.html" class="nav-link">WWF</a>
+                          <a href="cdc.html" class="nav-link">CDC</a>
+                          <a href="st.html" class="nav-link">Seattle Times</a>
+
+                      </div>
                 </li>
             </ul>
             <form class="navbar-form-search ml-auto">
@@ -286,6 +297,24 @@
     </script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js'></script>
     <script  src="js/script.js"></script>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+       var i;
+   for (i = 0; i < acc.length; i++) {
+       acc[i].addEventListener("click", function() {
+       /*Toggle between adding and removing the "active" class,
+       to highlight the button that controls the panel */
+       this.classList.toggle("active");
 
+   /* Toggle between hiding and showing the active panel */
+   var panel = this.nextElementSibling;
+   if (panel.style.display === "block") {
+     panel.style.display = "none";
+   } else {
+     panel.style.display = "block";
+   }
+ });
+}
+</script>
   </body>
 </html>
