@@ -20,6 +20,13 @@
         <link rel="stylesheet" type="text/css" href="css/charities.css">
         <link rel="stylesheet" type="text/css" href="css/home.css">
 
+         <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
         <title>Charities</title>
     </head>
     <body>
@@ -152,8 +159,8 @@
                 </div>
                 <div class = "col-xl-6 col-md-6 mb-30 mt-30">
                     <div class="subscribe-form">
-                    <form action="#">
-                        <input type="text" placeholder="Email Address">
+                    <form id="subscribeC">
+                        <input type="text" name="address" placeholder="Email Address">
                         <button><i class="fab fa-telegram-plane"></i></button>
                     </form>
                 </div>

@@ -1,3 +1,20 @@
+
+var firebaseConfig = {
+  apiKey: "AIzaSyAE1DagAv8qN8_nUzMhKCezSz9hoNBIgC0",
+  authDomain: "onetosave-cd865.firebaseapp.com",
+  databaseURL: "https://onetosave-cd865.firebaseio.com",
+  projectId: "onetosave-cd865",
+  storageBucket: "onetosave-cd865.appspot.com",
+  messagingSenderId: "668764127740",
+  appId: "1:668764127740:web:5122e830c03bac5fd93279",
+  measurementId: "G-1W04YL0FJM"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+const db = firebase.firestore();
+
 // Search bar
 if (typeof jQuery === "undefined") { 
     throw new Error("jQuery required"); 
@@ -35,6 +52,16 @@ var Swipes = new Swiper('.swiper-container', {
 });
 // ABOUT PAGE
 // Contact us form
+
+const otherForm=document.querySelector('#subscribeI,#subscribeC,#subscribe');
+otherForm.addEventListener('submit',(e)=>{
+  e.preventDefault();
+  db.collection('subscribe').add({
+    address: otherForm.address.value
+  })
+  otherForm.address.value="";
+})
+
 function formSubmit(){
     var a = document.forms["myform"]["name"].value;
     var b = document.forms["myform"]["email"].value;
@@ -49,5 +76,22 @@ function formSubmit(){
     }
 
 };
+
+//saving data
+const form = document.querySelector('#add-contact-form');
+
+form.addEventListener('submit', (e) =>{
+  e.preventDefault();
+  db.collection('contact').add({
+      name: form.name.value,
+      email: form.email.value,
+      subject: form.subject.value,
+      message: form.message.value 
+  })
+  form.name.value = "";
+  form.email.value = "";
+  form.subject.value="";
+  form.message.value="";
+})
 
 // CHARITIES PAGE
