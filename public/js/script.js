@@ -57,7 +57,7 @@ var Swipes = new Swiper('.swiper-container', {
 });
 
 
-const otherForm=document.querySelector('#subscribeI,#subscribeC');
+const otherForm=document.querySelector('#subscribeI,#subscribeC,#subscribe');
 otherForm.addEventListener('submit',(e)=>{
   e.preventDefault();
   db.collection('subscribe').add({
@@ -107,7 +107,7 @@ form.addEventListener('submit', (e) =>{
   form.message.value="";
 })
 
-const anotherForm=document.querySelector('#subscribe');
+/*const anotherForm=document.querySelector('#subscribe');
 
 anotherForm.addEventListener('submit',(e)=>{
   e.preventDefault();
@@ -115,7 +115,7 @@ anotherForm.addEventListener('submit',(e)=>{
     address: anotherForm.address.value
   })
   anotherForm.address.value="";
-})
+})*/
 
 
 
