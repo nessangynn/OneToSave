@@ -57,7 +57,7 @@ var Swipes = new Swiper('.swiper-container', {
 });
 
 
-const otherForm=document.querySelector('#subscribeI,#subscribeC');
+const otherForm=document.querySelector('#subscribeI,#subscribeC,#subscribe');
 otherForm.addEventListener('submit',(e)=>{
   e.preventDefault();
   db.collection('subscribe').add({
@@ -66,7 +66,14 @@ otherForm.addEventListener('submit',(e)=>{
   otherForm.address.value="";
 })
 
-
+/*const anotherForm=document.querySelector('#subscribe');
+anotherForm.addEventListener('submit',(e)=>{
+  e.preventDefault();
+  db.collection('subscribe').add({
+    address: anotherForm.address.value
+  })
+  anotherForm.address.value="";
+})*/
 
 
 
@@ -74,9 +81,6 @@ otherForm.addEventListener('submit',(e)=>{
 // ABOUT PAGE
 // Contact us form
 
-
-
-//const class = document.querySelector('')
 //get data
 db.collection('contact').get().then((snapshot)=>{
   snapshot.docs.forEach(doc=>{
@@ -88,7 +92,6 @@ db.collection('subscribe').get().then((snapshot)=>{
     console.log(doc.data())
   })
 })
-
 
 //saving data
 const form = document.querySelector('#add-contact-form');
@@ -107,15 +110,7 @@ form.addEventListener('submit', (e) =>{
   form.message.value="";
 })
 
-const anotherForm=document.querySelector('#subscribe');
 
-anotherForm.addEventListener('submit',(e)=>{
-  e.preventDefault();
-  db.collection('subscribe').add({
-    address: anotherForm.address.value
-  })
-  anotherForm.address.value="";
-})
 
 
 
