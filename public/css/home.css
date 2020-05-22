@@ -68,6 +68,32 @@ body {
     }
 }
 
+/*nav bar tab bar section*/
+ /* Navbar container */
+ .accordion {
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    width: 100%;
+    font-size: 1.5rem;
+   background-color: transparent;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    color: #FBA106;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    display: none;
+    overflow: hidden;
+    font-size: 1.5rem;
+  }
+
 /* Footer section */
 .footer-section {
     background-color: #4A4C4E;
