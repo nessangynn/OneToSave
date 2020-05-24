@@ -26,6 +26,14 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/swiper_style.css">
+
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
     
     <title>One to Save</title>
 </head>
@@ -151,7 +159,7 @@
                         <h2>WHO ARE WE?</h2>
                         <img src="img/heart.png" style ="width: 10%; height:10%" alt="" class="d-none d-lg-inline">
                         <p class="lead">"People out there is trying to make change so why not helping them?" -Vanessa N.</p>
-                        <p class="lead">"We three help others using our knowledge, reaching out to users to lend a hand" - LiZhu D.</p>
+                        <p class="lead">"I hope I can help other people with what I learn." - LiZhu D.</p>
                         <p class="lead">"I am a senior software engineer wants to lend a hand those who needed" - Pauline L.</p>
                         <p><a href="about.html"> Learn more >></a></p>
                     </div>
@@ -197,8 +205,8 @@
             </div>
             <div class = "col-xl-6 col-md-6 mb-30 mt-30">
                 <div class="subscribe-form">
-                <form action="#">
-                    <input type="text" placeholder="Email Address">
+                <form id="subscribeI">
+                    <input type="text" name="address" placeholder="Email Address">
                     <button><i class="fab fa-telegram-plane"></i></button>
                 </form>
             </div>
