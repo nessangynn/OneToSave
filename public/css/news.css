@@ -142,6 +142,7 @@ ul a:hover{
       text-align: center;
 
   }
+ 
   .new-link {
     width: 100%;
     margin:0;
@@ -169,3 +170,11 @@ ul a:hover{
     float: center;
     
   }
+  .rssdog {
+   
+   position: center;
+  
+   
+   
+}
+  
