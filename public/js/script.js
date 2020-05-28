@@ -1,4 +1,3 @@
-
 var firebaseConfig = {
   apiKey: "AIzaSyAE1DagAv8qN8_nUzMhKCezSz9hoNBIgC0",
   authDomain: "onetosave-cd865.firebaseapp.com",
