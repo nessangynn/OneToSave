@@ -1,0 +1,103 @@
+
+body {
+    background: rgb(238, 238, 238);
+    /* #FFDAB9 */
+    font-family: "Nunito";
+    
+}
+#canvas{
+    box-sizing: border-box;
+    width: 600px;
+    background-color: lightblue;
+    margin: 50px auto;
+    padding: 40px;
+    font-family: "Nunito";
+}
+
+#heading{
+    text-align: center;
+}
+
+h3{
+    font-size: 25px;
+    padding: 15px;
+
+}
+
+span{
+    color: #614AD3;
+}
+
+#date{
+    color:#E42C64;
+}
+
+ul {
+    list-style: none;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+ul a{
+    text-decoration: none;
+    color: #614AD3;
+    font-size: 1.5rem;
+    font-weight: 100;
+   
+}
+
+ul a:hover{
+    color:#E42C64;
+}
+.email {
+    padding: 10%;
+    left: 75%;
+    font-size: 30px;
+    top: 10px;
+    background-color:#fff;
+ }
+  
+  @font-face {
+    font-family: "San Francisco Display Semibold";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.svg#San Francisco Display Semibold") format("svg");
+  }
+  .blockquote {
+      padding:2% 20% 10% 20%;
+      text-decoration: none;
+  }
+
+  .row-section1 h2 {
+      margin-top: 5%;
+      text-align: center;
+
+  }
+ 
+  .new-link {
+    width: 100%;
+    margin:0;
+    
+  }
+
+  .new-link img{
+    width:50%;
+    height: auto;
+    float: center;
+    margin-left: 25%;
+  }
+
+  .container-news{
+      padding:0;
+  }
+
+  .news-link{
+    list-style: none;
+    width: 100%;
+  }
+
+  .news-link li{
+   
+    float: center;
+    
+  }
