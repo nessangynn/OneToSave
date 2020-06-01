@@ -1,0 +1,279 @@
+body {
+    background: white;
+    font-family: "Nunito";
+}
+
+.blurb h2 {
+   color: #FBA106;
+   font-weight: 100;
+   font-size: 2.5rem;
+}
+
+.blurb p {
+    color:#4A4C4E;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;    
+}
+
+
+#mainNavbar .nav-link{
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #FBA106;
+}
+
+#mainNavbar .navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+}
+
+#mainNavbar .navbar-brand:hover {
+    color: #F16223;
+}
+
+#headingGroup span {
+    color: #F16223;
+}
+
+#headingGroup h1 {
+    color: #FBA106;
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.navbar.scrolled {
+    background: #4A4C4E;
+    transition: background 500ms;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+    .blurb h2 {
+        font-size: 2rem;
+    }
+}
+
+/*nav bar tab bar section*/
+ /* Navbar container */
+ .accordion {
+    color: white;
+    font-family: "Nunito";
+    cursor: pointer;
+    padding: 8px;
+    font-weight: 100;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    color: #FBA106;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    display: none;
+    overflow: hidden;
+    font-size: 1.5rem;
+  }
+
+/* Footer section */
+.footer-section {
+    background-color: #4A4C4E;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Footer information section */
+.footer-information {
+    position: relative;
+    z-index: 2;
+}
+
+.footer-information .footer-logo {
+    margin-bottom: 30px;
+    background-size: cover;
+    max-width: 250px;
+}
+.footer-information .footer-text {
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: #7e7e7e;
+    line-height: 28px;
+}
+
+/* Footer Social Icons */
+.footer-information .footer-icon a {
+    color: #fff;
+    margin-left: 15px;
+    font-size: 20px;
+}
+.footer-information .footer-icon i {
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 70%;
+}
+/* Icon Background Color */
+.facebook-bg{
+    background-color: #3B5998;
+}
+.twitter-bg{
+    background-color: #55ACEE;
+}
+.linkedin-bg {
+    background-color: #0e76a8;
+}
+.github-bg {
+    background-color: black;
+}
+
+/* Footer head title section */
+.footer-widget-heading h3{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.footer-widget-heading h3::before {
+    content: "";
+    background-color: #FBA106;
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 100px;
+}
+
+/* Footer useful links section */
+.footer-widget ul li {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 13px;
+}
+.footer-widget ul li a:hover{
+    color: #FBA106;
+}
+.footer-widget ul li a {
+    color: #878787;
+}
+
+/* Copyright section */
+.copy-right-section {
+    border-top: 1px solid gray;
+    padding: 25px 0;
+    font-size: 20px;
+    color: #878787;
+}
+
+/* Subcribe section */
+.subscribe-box {
+    background-color: #FBA106;
+    border: 1px solid lightgoldenrodyellow;
+}
+.subscribe-form {
+    position: relative;
+    overflow: hidden;
+}
+.subscribe-form input {
+    width: 100%;
+    padding: 14px 28px;
+    background: #2E2E2E;
+    border: 1px solid #2E2E2E;/*#2E2E2E */
+    color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #EF5455;
+    padding: 13px 20px;
+    border: 1px solid #EF5455;
+    top: 0;
+}
+.subscribe-form button i {
+    color: #fff;
+    font-size: 22px;
+    transform: rotate(-6deg);
+}
+
+/* Search box section  */
+.navbar-form-search{
+    position: relative;
+    top: 0;
+    right: 0;
+    transform: translate(0,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+.navbar-form-search input{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+/* .navbar-form-search .fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: relative;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+} */
+
+.navbar-form-search:hover{
+    width: 200px;
+    cursor: pointer;
+}
+
+.navbar-form-search:hover input{
+    display: block;
+}
+
+/* .navbar-form-search:hover .fa{
+    background: #07051a;
+    color: white;
+} */
