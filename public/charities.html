@@ -16,22 +16,32 @@
         <!-- Google Font CSS -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap" rel="stylesheet">
 
+        <!-- Favicon -->
+        <link rel="icon" href="img/favicon.png">
+
         <!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="css/charities.css">
         <link rel="stylesheet" type="text/css" href="css/home.css">
 
          <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
 
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
+
+        
         <title>Charities</title>
+
     </head>
+
+
+
     <body>
+        <!-- NAVBAR -->
         <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
-            <a href="#" class="navbar-brand" ><img src="img/favicon.png" alt="OneToSave logo" width="30" height="30" class="d-inline-block align-top">ONE TO SAVE</a>
+            <a href="index.html" class="navbar-brand" ><img src="img/favicon.png" alt="OneToSave logo" width="30" height="30" class="d-inline-block align-top">ONE TO SAVE</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -45,104 +55,399 @@
                     </li>
                     <li class="nav-item">
                         <a href="charities.html" class="nav-link">CHARITIES</a>
-                        <li class="nav-item">
-                            <button class="accordion">NEWS</button>
-                            <div class ="panel">
-                                <a href="news.html" class="nav-link">UNICEF</a>
-                                <a href="who.html" class="nav-link">WHO</a>
-                                <a href="pbs.html" class="nav-link">PBS</a>
-                                <a href="wwf.html" class="nav-link">WWF</a>
-                                <a href="cdc.html" class="nav-link">CDC</a>
-                                <a href="st.html" class="nav-link">SEATTLE TIMES</a>
-    
-                            </div>
                     </li>
+                    <li class="nav-item">
+                        <button class="accordion">NEWS</button>
+                        <div class ="panel">
+                            <a href="news.html" class="nav-link">UNICEF</a>
+                            <a href="who.html" class="nav-link">WHO</a>
+                            <a href="pbs.html" class="nav-link">PBS</a>
+                            <a href="wwf.html" class="nav-link">WWF</a>
+                            <a href="cdc.html" class="nav-link">CDC</a>
+                            <a href="st.html" class="nav-link">SEATTLE TIMES</a>
+
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link" id="navbarDropdown1" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">NEWS</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <li><a class="dropdown-item" href="news.html"></a>UNICEF</li>
+                            <li><a class="dropdown-item" href="who.html"></a>WHO</li>
+                            <li><a class="dropdown-item" href="pbs.html"></a>PBS</li>
+                            <li><a class="dropdown-item" href="wwf.html"></a>WWF</li>
+                            <li><a class="dropdown-item" href="cdc.html"></a>CDC</li>
+                            <li><a class="dropdown-item" href="st.html"></a>SEATTLE TIMES</li>
+                        </ul>
+                    </li> -->
+                    <form class="form-inline my-2 my-lg-0 ml-auto search-form">
+                        <span class="fa fa-search form-control-feedback"></span>
+                        <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search" aria-label="Search">
+                      </form>
                 </ul>
             </div>
         </nav>
-        <section class = "container-fluid">
-            <div class="row-section1">
-                <h2>UNICEF</h2>
-                    <!----individual html pages go here--->
-                    <a href="#" target ="_blank"><img src="img/unicefi.PNG" alt="Learn more about Unicef" width="425" height="300" ALIGN="left"></a>
-                    <p class = "blockquote"> 
-                        Currently, UNICEF is on the front lines, fighting the novel coronavirus with supplies, 
-                        support and lifesaving information. Unicef's vision is a better world for children everywhere. 
-                        UNICEF USA receives the highest ratings for transparency, accountability and administration. 
-                        Of every dollar spent, 89 cents goes toward helping children. 8.1 cents goes to fundraising costs, 
-                        and 2.9 cents on administration.
-                    </p>
-                    <a class="btn btn-testOne" href="https://www.unicefusa.org/?form=donate" target="_blank">Donate</a>
+
+        <!-- JUMBOTRON -->
+        <div class="jumbotron jumbotron-fluid bg-dark">
+  
+            <div class="jumbotron-background">
+              <img src="https://images.unsplash.com/photo-1474524955719-b9f87c50ce47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1504&q=80" class="blur ">
             </div>
-            <br>
-            <br>
-            <br>
-            <div class="row-section2">
-                <h2>DIRECT RELIEF</h2>
-                    <a href="#" target ="_blank">
-                        <img src="img/DirectRelief.jpg" alt="Learn more at Direct Relief" width="425" height="300" ALIGN="right">
-                    </a>
-                    <p>
-                        Direct Relief works in the U.S. and internationally to equip doctors and nurses with life-saving medical 
-                        resources to care for the world's most vulnerable people.
-                        The organization is making sure the courage of health workers on the front lines is honored with meaningful support, 
-                        and the people most at risk in this pandemic are cared for – regardless of politics, religion, or ability to pay.
-                    </p>
-                    <a class="btn btn-testOne" href="https://secure.directrelief.org/site/Donation2?df_id=2924&mfc_pref=T&2924.donation=form1" target="_blank">Donate</a>
-            </div>
-            <br>
-            <div class="row-section3">
-                <ul>
-                    <h2>RED CROSS</h2>
-                        <a href="https://www.redcross.org/" target ="_blank">
-                        <img src="img/redcross.jpg" alt="Learn more at Red Cross" width="425" height="300" ALIGN="left">
-                        </a>
-                        <p>
-                            The American Red Cross prevents and alleviates human suffering in the face of emergencies by mobilizing the power of volunteers and the generosity of donors.​
-                            Red Cross volunteers and staff work to deliver vital services – from providing relief and support to those in crisis, 
-                            to helping you be prepared to respond in emergencies. The American Red Cross is part of the world's largest volunteer network found in nearly 200 countries.  
+          
+            <div class="container text-white">
+          
+              <h1 class="display-3">The best and fastest way to <span class = 'bg-primary'>connect with Charities</span>!</h1>
+              <p class="lead">We connect you with multiple trustworthy organizations.<br>
+                            Lend others a hand with reliable sources and news..</p>
+              <hr class="my-4">
+              <p> - This is a non-profit websites to support charities out there - </p>
+              <a class="btn btn-warning btn-lg" href="#charities-section" role="button">Learn more</a>
+          
+            </div>            
+           
+        </div>
+
+        <section class="container border border-warning pt-5 mb-5" id= "charities-section">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-5">
+                    
+                        <div id="carousel-5" class="carousel slide" data-ride="carousel">
+                           
+                            <ol class="carousel-indicators">
+                              <li data-target="#carousel-5" data-slide-to="0" class="active"></li>
+                              <li data-target="#carousel-5" data-slide-to="1"></li>
+                              <li data-target="#carousel-5" data-slide-to="2"></li>
+                            </ol>
+                           
+                            <div class="carousel-inner" role="listbox">
+                    
+                              <div class="carousel-item active">
+                                <img class="d-block img-fluid" src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="slide">
+                              </div>
+                              
+                              <div class="carousel-item">
+                                <img class="d-block img-fluid" src="https://images.unsplash.com/photo-1576361181962-701d5694bfbf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1510&q=80" alt="slide">
+                              </div>
+                              
+                              <div class="carousel-item">
+                                <img class="d-block img-fluid" src="https://images.unsplash.com/photo-1564121211835-e88c852648ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="slide">
+                              </div>
+        
+                            </div><!-- e carousel-inner -->
+                            
+                            <a class="carousel-control-prev" href="#carousel-5" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">prev</span>
+                            </a>
+                            
+                            <a class="carousel-control-next" href="#carousel-5" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">next</span>
+                            </a>
+                            
+                        </div><!-- e carousel -->
+                    
+                    </div> 
+                    <!-- end of column 1 -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-5">
+                        <h2>UNICEF</h2>
+
+                        <p class = "lead"> 
+                            Currently, UNICEF is on the front lines, fighting the novel coronavirus with supplies, 
+                            support and lifesaving information. Unicef's vision is a better world for children everywhere.
                         </p>
-                        <a class="btn btn-testOne" href="https://www.redcross.org/donate/donation.html/?cid=rlsa&med=cpc&source=google&scode=RSG00000E017&gclid=CjwKCAjw4pT1BRBUEiwAm5QuR27HC_uqbXLXZAfnhRqI8sNf9S2zwt6-0JPmYDTy--qVmcvcdFe_3RoCVfoQAvD_BwE&gclsrc=aw.dss" target="_blank">Donate</a>
-                </ul>
-            </div>
-            <br>
-            <br>
-            <br>
-            <div class="row-section4">
-                <ul>
-                    <h2>WWF</h2>
-                        <a href="https://www.worldwildlife.org/" target ="_blank">
-                        <img src="img/wwfc.jpg" alt="Learn more at WWF" width="425" height="300" ALIGN="right">
-                        </a>
-                        <p>
-                            The WWF's mission is to conserve nature and reduce the most pressing threats to the diversity of life on Earth.
-                            WWF’s work has evolved from saving species and landscapes to addressing the larger global threats and forces that impact them.
-                            WWF works to educate and influence people into making sustainable choices and decisions, including those who work in business
-                            and make decisions around the use of natural resources, and those who work in government and set policy that impacts nature.
+                        <p class = "lead">
+                            UNICEF USA receives the highest ratings for transparency, accountability and administration. 
+                            Of every dollar spent, 89 cents goes toward helping children. 8.1 cents goes to fundraising costs, 
+                            and 2.9 cents on administration.
                         </p>
-                        <a class="btn btn-testOne" href="https://support.worldwildlife.org/site/SPageServer?pagename=main_monthly&s_src=AWE2007OQ18299A01179RX&_ga=2.132574663.872206284.1587890209-1646971618.1586726128&_gac=1.153806666.1587539014.CjwKCAjw1v_0BRAkEiwALFkj5r6qgL01i4OvhXGI-0ovsDoBTfaL9rH46sIG6Aej6V_T1WMe7Yww1RoCWA0QAvD_BwE" target="_blank">Donate</a>
-                    </ul>
-            </div>
-            <br>
-            <br>
-            <br>
-            <div class="row-section5">
-                <ul>
-                <h2>MARY'S PLACE</h2>
-                        <a href="https://www.marysplaceseattle.org/" target ="_blank">
-                        <img  src="img/mary.jpg" alt="Learn more at Mary's Place" width="425" height="300" ALIGN="left">
-                        </a>
-                        <p>
-                            Mary’s Place provides safe, inclusive shelter and services that support women, children and families 
-                            on their journey out of homelessness. Mary’s Place has helped hundreds of women and families move out 
-                            of homelessness into more stable situations. The women’s drop-in Day Center in downtown Seattle provides meals, 
-                            showers, laundry, access to resources, safety and  relationship to over a hundred women each day.
+                        <a id="donate-button" class="button" href="https://www.unicefusa.org/?form=donate">Donate<i id = "arrow-hover" class="far fa-heart"></i></a>
+                    </div>
+                    <!-- end of column 2 -->
+                    
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end section -->
+
+        <section class="container border border-light pt-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-5">
+                        <h2>DIRECT RELIEF</h2>
+
+                        <p class = "lead"> 
+                            Direct Relief works in the U.S. and internationally to equip doctors and nurses with life-saving medical 
+                            resources to care for the world's most vulnerable people.
                         </p>
-                        <a class="btn btn-testOne" href="https://www.marysplaceseattle.org/ways-to-give" target="_blank">Donate</a>
-                </ul>
-            </div>
-            <br>
-        </section>
+    
+                        <p class = "lead">
+                            The organization is making sure the courage of health workers on the front lines is honored with meaningful support, 
+                            and the people most at risk in this pandemic are cared for – regardless of politics, religion, or ability to pay.
+                        </p>
+
+                        <a id="donate-button" class="button" href="https://secure.directrelief.org/site/Donation2?df_id=2924&mfc_pref=T&2924.donation=form1">Donate<i id = "arrow-hover" class="far fa-heart"></i></a>
+
+                    </div>
+                    <!-- end of column 1 -->
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-5">
+                    
+                        <div id="carousel-5" class="carousel slide" data-ride="carousel">
+                           
+                            <ol class="carousel-indicators">
+                              <li data-target="#carousel-5" data-slide-to="0" class="active"></li>
+                              <li data-target="#carousel-5" data-slide-to="1"></li>
+                              <li data-target="#carousel-5" data-slide-to="2"></li>
+                            </ol>
+                           
+                            <div class="carousel-inner" role="listbox">
+                    
+                              <div class="carousel-item active">
+                                <img class="d-block img-fluid" src="https://i1.wp.com/www.directrelief.org/wp-content/uploads/2018/01/1981BF-H9-422-credit-David-Uttley-%E2%80%A8Samaritans-Purse.jpg?resize=1280%2C720px&ssl=1" alt="slide">
+                              </div>
+                              
+                              <div class="carousel-item">
+                                <img class="d-block img-fluid" src="https://i0.wp.com/www.directrelief.org/wp-content/uploads/2018/01/Polaris06796091-scaled.jpg?resize=1280%2C720px&ssl=1" alt="slide">
+                              </div>
+                              
+                              <div class="carousel-item">
+                                <img class="d-block img-fluid" src="https://i2.wp.com/www.directrelief.org/wp-content/uploads/Haiti_Matthew-1-1.jpg?resize=1280%2C720px&ssl=1" alt="slide">
+                              </div>
+        
+                            </div><!-- e carousel-inner -->
+                            
+                            <a class="carousel-control-prev" href="#carousel-5" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">prev</span>
+                            </a>
+                            
+                            <a class="carousel-control-next" href="#carousel-5" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">next</span>
+                            </a>
+                            
+                        </div><!-- e carousel -->
+                    
+                    </div> 
+                    <!-- end of column 2 -->
+                    
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end DIRECT RELIEF section -->
+
+        <section class="container border border-warning pt-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-5">
+                    
+                        <div id="carousel-5" class="carousel slide" data-ride="carousel">
+                           
+                            <ol class="carousel-indicators">
+                              <li data-target="#carousel-5" data-slide-to="0" class="active"></li>
+                              <li data-target="#carousel-5" data-slide-to="1"></li>
+                              <li data-target="#carousel-5" data-slide-to="2"></li>
+                            </ol>
+                           
+                            <div class="carousel-inner" role="listbox">
+                    
+                              <div class="carousel-item active">
+                                <img class="d-block img-fluid" src="https://www.redcross.org/content/dam/redcross/uncategorized/5/benefits-total-rewards.jpg.img.jpeg" alt="slide">
+                              </div>
+                              
+                              <div class="carousel-item">
+                                <img class="d-block img-fluid" src="https://images.unsplash.com/photo-1556476944-074350c1bd7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1780&q=80" alt="slide">
+                              </div>
+                              
+                              <div class="carousel-item">
+                                <img class="d-block img-fluid" src="https://images.unsplash.com/photo-1573906645615-ccb82f8dc66a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80" alt="slide">
+                              </div>
+        
+                            </div><!-- e carousel-inner -->
+                            
+                            <a class="carousel-control-prev" href="#carousel-5" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">prev</span>
+                            </a>
+                            
+                            <a class="carousel-control-next" href="#carousel-5" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">next</span>
+                            </a>
+                            
+                        </div><!-- e carousel -->
+                    
+                    </div> 
+                    <!-- end of column 1 -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-5">
+                        <h2>RED CROSS</h2>
+
+                        <p class = "lead"> 
+                            The American Red Cross prevents and alleviates human suffering in 
+                            the face of emergencies by mobilizing the power of volunteers and the generosity of donors.​
+                        </p>
+                        <p class = "lead">
+                            Red Cross volunteers and staff work to deliver vital services – from 
+                            providing relief and support to those in crisis, 
+                            to helping you be prepared to respond in emergencies. The American Red Cross is 
+                            part of the world's largest volunteer network found in nearly 200 countries. 
+                        </p>
+
+                        <a id="donate-button" class="button" href="https://www.redcross.org/donate/donation.html/?cid=rlsa&med=cpc&source=google&scode=RSG00000E017&gclid=CjwKCAjw4pT1BRBUEiwAm5QuR27HC_uqbXLXZAfnhRqI8sNf9S2zwt6-0JPmYDTy--qVmcvcdFe_3RoCVfoQAvD_BwE&gclsrc=aw.dss">Donate<i id = "arrow-hover" class="far fa-heart"></i></a>
+                    
+                    </div>
+                    <!-- end of column 2 -->
+                    
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end RED CROSS section -->
+
+        <section class="container border border-light pt-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-5">
+                        <h2>WWF - WorldWildLife</h2>
+
+                        <p class = "lead"> 
+                            The WWF's mission is to conserve nature and reduce the most pressing threats to 
+                            the diversity of life on Earth. </p>
+                        <p class="lead">
+                            WWF’s work has evolved from saving species and landscapes to 
+                            addressing the larger global threats and forces that impact them.
+                        </p>
+                        <p class = "lead">
+                            WWF works to educate and influence people into making 
+                            sustainable choices and decisions, including those who work in business
+                            and make decisions around the use of natural resources, 
+                            and those who work in government and set policy that impacts nature.
+                        </p>
+
+                        <a id="donate-button" class="button" href="https://support.worldwildlife.org/site/SPageServer?pagename=main_monthly&s_src=AWE2007OQ18299A01179RX&_ga=2.132574663.872206284.1587890209-1646971618.1586726128&_gac=1.153806666.1587539014.CjwKCAjw1v_0BRAkEiwALFkj5r6qgL01i4OvhXGI-0ovsDoBTfaL9rH46sIG6Aej6V_T1WMe7Yww1RoCWA0QAvD_BwE">Donate<i id = "arrow-hover" class="far fa-heart"></i></a>
+
+                    </div>
+                    <!-- end of column 1 -->
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-5">
+                    
+                        <div id="carousel-5" class="carousel slide" data-ride="carousel">
+                           
+                            <ol class="carousel-indicators">
+                              <li data-target="#carousel-5" data-slide-to="0" class="active"></li>
+                              <li data-target="#carousel-5" data-slide-to="1"></li>
+                              <li data-target="#carousel-5" data-slide-to="2"></li>
+                            </ol>
+                           
+                            <div class="carousel-inner" role="listbox">
+                    
+                              <div class="carousel-item active">
+                                <img class="d-block img-fluid" src="https://images.unsplash.com/photo-1526226244945-39c5d1d9e61a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="slide">
+                              </div>
+                              
+                              <div class="carousel-item">
+                                <img class="d-block img-fluid" src="https://images.unsplash.com/photo-1517384361842-9293f3f39bc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="slide">
+                              </div>
+                              
+                              <div class="carousel-item">
+                                <img class="d-block img-fluid" src="https://images.unsplash.com/photo-1516064576505-9b9b9777118c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="slide">
+                              </div>
+        
+                            </div><!-- e carousel-inner -->
+                            
+                            <a class="carousel-control-prev" href="#carousel-5" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">prev</span>
+                            </a>
+                            
+                            <a class="carousel-control-next" href="#carousel-5" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">next</span>
+                            </a>
+                            
+                        </div><!-- e carousel -->
+                    
+                    </div> 
+                    <!-- end of column 2 -->
+                    
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end WWF section -->
+
+        
+        <section class="container border border-warning pt-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-5">
+                    
+                        <div id="carousel-5" class="carousel slide" data-ride="carousel">
+                           
+                            <ol class="carousel-indicators">
+                              <li data-target="#carousel-5" data-slide-to="0" class="active"></li>
+                              <li data-target="#carousel-5" data-slide-to="1"></li>
+                              <li data-target="#carousel-5" data-slide-to="2"></li>
+                            </ol>
+                           
+                            <div class="carousel-inner" role="listbox">
+                    
+                              <div class="carousel-item active">
+                                <img class="d-block img-fluid" src="https://images.squarespace-cdn.com/content/v1/5b8989d231d4df1bccd7bcc7/1579895851586-AOOOQ5P41L1363D3HZ75/ke17ZwdGBToddI8pDm48kAM1a5zotZzQrWjTHZJqOJF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UTtv1bMLcFuwHcEO7g6eGxBkCO8TxrApjtgKirouD2fW-1NK7a2rx1wkIPBPRufh_A/DSC05095.jpg?format=2500w" alt="slide">
+                              </div>
+                              
+                              <div class="carousel-item">
+                                <img class="d-block img-fluid" src="https://images.squarespace-cdn.com/content/v1/5b8989d231d4df1bccd7bcc7/1577398456627-C3W6WD0ETP1YEZC4Y37I/ke17ZwdGBToddI8pDm48kDHPSfPanjkWqhH6pl6g5ph7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mwONMR1ELp49Lyc52iWr5dNb1QJw9casjKdtTg1_-y4jz4ptJBmI9gQmbjSQnNGng/HJ.jpg?format=2500w" alt="slide">
+                              </div>
+                              
+                              <div class="carousel-item">
+                                <img class="d-block img-fluid" src="https://images.unsplash.com/photo-1568572306502-33a58414762d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" alt="slide">
+                              </div>
+        
+                            </div><!-- e carousel-inner -->
+                            
+                            <a class="carousel-control-prev" href="#carousel-5" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">prev</span>
+                            </a>
+                            
+                            <a class="carousel-control-next" href="#carousel-5" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">next</span>
+                            </a>
+                            
+                        </div><!-- e carousel -->
+                    
+                    </div> 
+                    <!-- end of column 1 -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-5">
+                        <h2>MARY's PLACE</h2>
+
+                        <p class = "lead"> 
+                            Mary’s Place provides safe, inclusive shelter and 
+                            services that support women, children and families 
+                            on their journey out of homelessness.
+                        </p>
+                        <p class = "lead">
+                            Mary’s Place has helped hundreds of women and families move out 
+                            of homelessness into more stable situations.
+                        </p>
+                        <p class="lead">
+                            The women’s drop-in Day Center in downtown Seattle provides meals, 
+                            showers, laundry, access to resources, safety and 
+                            relationship to over a hundred women each day. 
+                        </p>
+
+                        <a id="donate-button" class="button" href="https://www.marysplaceseattle.org/ways-to-give">Donate<i id = "arrow-hover" class="far fa-heart"></i></a>
+
+                    </div>
+                    <!-- end of column 2 -->
+                    
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end MARY's PLACE section -->
+
 
         <!-- Footer section -->
         <footer class = "footer-section">
