@@ -1,6 +1,6 @@
 body {
     background: white;
-    font-family: "Nunito", sans-serif;
+    font-family: "Nunito";
 }
 
 .blurb h2 {
@@ -26,7 +26,8 @@ body {
     font-weight: 100;    
 }
 
-#mainNavbar .nav-link {
+
+#mainNavbar .nav-link{
     color: white;
 }
 
@@ -72,11 +73,12 @@ body {
  /* Navbar container */
  .accordion {
     color: white;
+    font-family: "Nunito";
     cursor: pointer;
     padding: 8px;
-    width: 100%;
+    font-weight: 100;
     font-size: 1.5rem;
-   background-color: transparent;
+    background-color: transparent;
     border: none;
     outline: none;
     transition: 0.4s;

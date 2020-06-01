@@ -52,11 +52,11 @@
                     <li class="nav-item">
                       <button class="accordion">NEWS</button>
                       <div class ="panel">
-                          <a href="news.html" class="nav-link">UNICEF</a>
+                          <a href="unicef.html" class="nav-link">UNICEF</a>
                           <a href="who.html" class="nav-link">WHO</a>
                           <a href="pbs.html" class="nav-link">PBS</a>
                           <a href="wwf.html" class="nav-link">WWF</a>
-                          <a href="cdc.html" class="nav-link">CDC</a>
+                          <a href="npr.html" class="nav-link">NPR</a>
                           <a href="st.html" class="nav-link">SEATTLE TIMES</a>
 
                       </div>
@@ -194,7 +194,7 @@
                 <form id="add-contact-form">
                   <div class="form-group">
                     <label for="user-name" class="col-form-label">Name:</label>
-                    <input type="text" class="form-control" name="name" id="user-name">
+                    <input type="text" class="form-control" name="name" id="user-name" required>
                   </div>
                   <div class="form-group">
                     <label for="user-email" class="col-form-label">Email:</label>
@@ -203,12 +203,12 @@
                   </div>
                   <div class="form-group">
                     <label for="user-subject" class="col-form-label">Subject:</label>
-                    <input type="text" class="form-control" name="subject" id="user-subject">
+                    <input type="text" class="form-control" name="subject" id="user-subject" required>
                   </div>
                   <div class="form-group">
                     <label for="message-text" class="col-form-label">Message:</label>
                     <textarea class="form-control" name="message" id="message-text"
-                      placeholder="Any words to say with us?"></textarea>
+                    placeholder="Any words to say with us?" required></textarea>
                     <small id="contactHelp" class="form-text text-muted">Your information is safe with us.</small>
                   </div>
                   <div class="modal-footer">
@@ -240,7 +240,7 @@
             <div class = "col-xl-6 col-md-6 mb-30 mt-30">
               <div class="subscribe-form">
                 <form id="subscribe">
-                    <input type="text" name="address" placeholder="Email Address">
+                  <input type="text" name="address" placeholder="Email Address" required>
                     <button><i class="fab fa-telegram-plane"></i></button>
                 </form>
             </div>
@@ -269,7 +269,7 @@
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About Us</a></li>
                   <li><a href="charities.html">Charities</a></li>
-                  <li><a href="news.html">Latest News</a></li>
+                  <li><a href="unicef.html">Latest News</a></li>
                   <li><a href="question.html">FAQ</a></li>
               </ul>
             </div>
@@ -279,10 +279,10 @@
               <div class="footer-widget-heading">
                 <h3>Follow Us</h3>
               </div>
-              <a href="#"><i class="fa fa-facebook facebook-bg"></i></a>
-              <a href="#"><i class="fa fa-twitter twitter-bg"></i></a>
-              <a href="#"><i class="fa fa-linkedin linkedin-bg"></i></a>
-              <a href="#"><i class="fa fa-github github-bg"></i></a>
+              <a href="about.html"><i class="fa fa-facebook facebook-bg"></i></a>
+                    <a href="about.html"><i class="fa fa-twitter twitter-bg"></i></a>
+                    <a href="about.html"><i class="fa fa-linkedin linkedin-bg"></i></a>
+                    <a href="https://github.com/nessangynn/OneToSave"><i class="fa fa-github github-bg"></i></a>
             </div>
           </div>
         </div>
