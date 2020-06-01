@@ -194,7 +194,7 @@
                 <form id="add-contact-form">
                   <div class="form-group">
                     <label for="user-name" class="col-form-label">Name:</label>
-                    <input type="text" class="form-control" name="name" id="user-name">
+                    <input type="text" class="form-control" name="name" id="user-name" required>
                   </div>
                   <div class="form-group">
                     <label for="user-email" class="col-form-label">Email:</label>
@@ -203,12 +203,12 @@
                   </div>
                   <div class="form-group">
                     <label for="user-subject" class="col-form-label">Subject:</label>
-                    <input type="text" class="form-control" name="subject" id="user-subject">
+                    <input type="text" class="form-control" name="subject" id="user-subject" required>
                   </div>
                   <div class="form-group">
                     <label for="message-text" class="col-form-label">Message:</label>
                     <textarea class="form-control" name="message" id="message-text"
-                      placeholder="Any words to say with us?"></textarea>
+                      placeholder="Any words to say with us?" required></textarea>
                     <small id="contactHelp" class="form-text text-muted">Your information is safe with us.</small>
                   </div>
                   <div class="modal-footer">
@@ -240,7 +240,7 @@
             <div class = "col-xl-6 col-md-6 mb-30 mt-30">
               <div class="subscribe-form">
                 <form id="subscribe">
-                    <input type="text" name="address" placeholder="Email Address">
+                    <input type="text" name="address" placeholder="Email Address" required>
                     <button><i class="fab fa-telegram-plane"></i></button>
                 </form>
             </div>
