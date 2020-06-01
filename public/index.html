@@ -13,7 +13,8 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      
     <!-- Google Font CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
@@ -24,7 +25,8 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css'>
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/home.css">
+    <link rel= "stylesheet" type="text/css" href="css/home.css"> 
+    <link rel= "stylesheet" type="text/css" href="css/news.css"> 
     <link rel="stylesheet" href="css/swiper_style.css">
 
      <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -40,7 +42,7 @@
 
 <body>
     <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
-        <a href="index.html" class="navbar-brand" ><img src="img/favicon.png" alt="OneToSave logo" width="30" height="30" class="d-inline-block align-top">ONE TO SAVE</a>
+        <a href="#" class="navbar-brand" ><img src="img/favicon.png" alt="OneToSave logo" width="30" height="30" class="d-inline-block align-top">ONE TO SAVE</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -54,14 +56,14 @@
                 </li>
                 <li class="nav-item">
                     <a href="charities.html" class="nav-link">CHARITIES</a>
-                    <li class="nav-item">
+                    <li class="nav-item">                         
                         <button class="accordion">NEWS</button>
                         <div class ="panel">
-                            <a href="news.html" class="nav-link">UNICEF</a>
+                            <a href="unicef.html" class="nav-link">UNICEF</a>
                             <a href="who.html" class="nav-link">WHO</a>
                             <a href="pbs.html" class="nav-link">PBS</a>
                             <a href="wwf.html" class="nav-link">WWF</a>
-                            <a href="cdc.html" class="nav-link">CDC</a>
+                            <a href="npr.html" class="nav-link">NPR</a>
                             <a href="st.html" class="nav-link">SEATTLE TIMES</a>
 
                         </div>
@@ -139,14 +141,10 @@
                     <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                         <h2>CONNECT WITH CHARITIES</h2>
                         <img src="img/heart.png" style ="width: 10%; height:10%" alt="" class="d-none d-lg-inline">
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae
-                            beatae, maiores deserunt
-                            in voluptatibus
-                            aspernatur architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic consequatur
-                            repellat eveniet quidem
-                            voluptate necessitatibus dolorum delectus minus vitae, ut, veritatis sint ipsum magnam
-                            autem nam ex deserunt debitis
-                            eaque ratione! Nobis, quidem assumenda.</p>
+                        <p class="lead">OneToSave presents current events as well as charitable organizations, 
+                            that have been verified, that link to those events. Click to learn more and
+                            connect with verified charities and organizations from Unicef, Direct Relief, and more.
+                        </p>
                         <p><a href="charities.html"> Learn more >></a></p>
                     </div>
                 </div>
@@ -158,9 +156,9 @@
                     <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
                         <h2>WHO ARE WE?</h2>
                         <img src="img/heart.png" style ="width: 10%; height:10%" alt="" class="d-none d-lg-inline">
-                        <p class="lead">"People out there is trying to make change so why not helping them?" -Vanessa N.</p>
+                        <p class="lead">"People are trying to make a change so why not join and help them?" -Vanessa N.</p>
                         <p class="lead">"I hope I can help other people with what I learn." - LiZhu D.</p>
-                        <p class="lead">"I am a senior software engineer wants to lend a hand those who needed" - Pauline L.</p>
+                        <p class="lead">"I want to lend a hand to those in need" - Pauline L.</p>
                         <p><a href="about.html"> Learn more >></a></p>
                     </div>
                 </div>
@@ -190,17 +188,19 @@
             </div>
         </div>
     </section>
-    <!-- Footer section -->
-    <footer class = "footer-section">
-        <div class = "subscribe-box">
-        <div class = "container">
-            <div class = "row pt-5 pb-5">
-            <div class = "col-xl-6 col-md-6 mb-30 mt-30">
-                <div class="footer-widget-heading">
-                    <h3>SUBSCRIBE</h3>
-                </div>
-                <div class="mb-25">
-                    <p>Don’t miss to subscribe to our new feeds.</p>
+
+           <!-- Footer section -->
+           <footer class = "footer-section">
+            <div class = "subscribe-box">
+            <div class = "container">
+                <div class = "row pt-5 pb-5">
+                <div class = "col-xl-6 col-md-6 mb-30 mt-30">
+                    <div class="footer-widget-heading">
+                        <h3>SUBSCRIBE</h3>
+                    </div>
+                    <div class="mb-25">
+                        <p>Don’t miss to subscribe to our new feeds.</p>
+                    </div>
                 </div>
             </div>
             <div class = "col-xl-6 col-md-6 mb-30 mt-30">
@@ -215,55 +215,55 @@
         </div>
         </div>
         <div class = "container footer-information">
-        <div class = "row pt-5">
-            <div class="col-xl-4 col-lg-4 mb-50">
+            <div class = "row pt-5">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="img/logo.png" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>Our organization is dedicated to reach out to those in need.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 mb-50">
                 <div class="footer-widget">
-                    <div class="footer-logo">
-                        <a href="index.html"><img src="img/logo.png" class="img-fluid" alt="logo"></a>
+                    <div class="footer-widget-heading">
+                        <h3>Useful Links</h3>
                     </div>
-                    <div class="footer-text">
-                        <p>Our organization dedicates to reach out for those in needs.</p>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="charities.html">Charities</a></li>
+                        <li><a href="unicef.html">Latest News</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 mb-50">
+                <div class="footer-widget footer-icon">
+                    <div class="footer-widget-heading">
+                    <h3>Follow Us</h3>
                     </div>
+                    <a href="about.html"><i class="fa fa-facebook facebook-bg"></i></a>
+                    <a href="about.html"><i class="fa fa-twitter twitter-bg"></i></a>
+                    <a href="about.html"><i class="fa fa-linkedin linkedin-bg"></i></a>
+                    <a href="https://github.com/nessangynn/OneToSave"><i class="fa fa-github github-bg"></i></a>
+                </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 mb-50">
-            <div class="footer-widget">
-                <div class="footer-widget-heading">
-                    <h3>Useful Links</h3>
-                </div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Charities</a></li>
-                    <li><a href="#">Latest News</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
             </div>
+            <div class = "container copy-right-section text-center">
+            <p>One To Save &copy; 2020, All Right Reserved PL, VN, LD</p>
             </div>
-            <div class="col-xl-4 col-lg-4 mb-50">
-            <div class="footer-widget footer-icon">
-                <div class="footer-widget-heading">
-                <h3>Follow Us</h3>
-                </div>
-                <a href="#"><i class="fa fa-facebook facebook-bg"></i></a>
-                <a href="#"><i class="fa fa-twitter twitter-bg"></i></a>
-                <a href="#"><i class="fa fa-linkedin linkedin-bg"></i></a>
-                <a href="#"><i class="fa fa-github github-bg"></i></a>
-            </div>
-            </div>
-        </div>
-        </div>
-        <div class = "container copy-right-section text-center">
-        <p>One To Save &copy; 2020, All Right Reserved PL, VN, LD</p>
-        </div>
-    </footer> <!-- end of footer -->
-    
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
-    <!-- transparent effect on the navbar -->
+        </footer> <!-- end of footer -->
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        <!-- transparent effect on the navbar -->
     <script>
         $(function () {
             $(document).scroll(function () {
@@ -272,27 +272,28 @@
             });
         });
     </script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js'></script>
-    <script  src="js/script.js"></script>
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-         var i;
-     for (i = 0; i < acc.length; i++) {
-         acc[i].addEventListener("click", function() {
-         /*Toggle between adding and removing the "active" class,
-         to highlight the button that controls the panel */
-         this.classList.toggle("active");
- 
-     /* Toggle between hiding and showing the active panel */
-     var panel = this.nextElementSibling;
-     if (panel.style.display === "block") {
-       panel.style.display = "none";
-     } else {
-       panel.style.display = "block";
-     }
-   });
- }
- </script>
-</body>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js'></script>
+        <script  src="js/script.js"></script>
+
+       <script>
+       var acc = document.getElementsByClassName("accordion");
+        var i;
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+        /*Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+    </body>
 
 </html>

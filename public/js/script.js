@@ -70,7 +70,6 @@ otherForm.addEventListener('submit',function(){
     var a = document.forms["myform"]["name"].value;
     var b = document.forms["myform"]["email"].value;
     var c = document.forms["myform"]["message"].value;
-
     if (a == "" | b =="" | c=="") {
     alert("You need to fill out the box with *");
     return false;
@@ -85,7 +84,6 @@ otherForm.addEventListener('submit',function(){
     }else{
       alert("we receive you message!");
     }
-
 };*/
 
 //saving contact form
