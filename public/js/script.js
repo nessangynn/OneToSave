@@ -50,8 +50,9 @@ var Swipes = new Swiper('.swiper-container', {
     },
 });
 // ABOUT PAGE
-// Contact us form
 
+// Contact us form
+// subscribe us form data
 const otherForm=document.querySelector('#subscribeI,#subscribeC,#subscribe');
 otherForm.addEventListener('submit',(e)=>{
   e.preventDefault();
@@ -61,7 +62,11 @@ otherForm.addEventListener('submit',(e)=>{
   otherForm.address.value="";
 })
 
-function formSubmit(){
+otherForm.addEventListener('submit',function(){
+  alert("Thank you for subscribing!");
+})
+
+/*function formSubmit(){
     var a = document.forms["myform"]["name"].value;
     var b = document.forms["myform"]["email"].value;
     var c = document.forms["myform"]["message"].value;
@@ -73,10 +78,17 @@ function formSubmit(){
         alert("We receive you message!");
         return true;
     }
+    var a = document.getElementsByClassName("form-group").value;
+    if(a==""){
+      alert("You need to fill out the box with *");
+      return false;
+    }else{
+      alert("we receive you message!");
+    }
 
-};
+};*/
 
-//saving data
+//saving contact form
 const form = document.querySelector('#add-contact-form');
 
 form.addEventListener('submit', (e) =>{
@@ -91,6 +103,27 @@ form.addEventListener('submit', (e) =>{
   form.email.value = "";
   form.subject.value="";
   form.message.value="";
+  
 })
+
+//a popup message after form success submit
+form.addEventListener('submit',function(){
+  alert("We recieve you message!");
+  //window.close();
+})
+
+
+//using reload method to chose the window
+form.addEventListener('submit',function(){
+  var timerId = setTimeout(showSpecial, 1000);
+  
+})
+
+function showSpecial(){
+  location.reload();
+}
+
+
+
 
 // CHARITIES PAGE
