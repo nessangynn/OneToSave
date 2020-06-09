@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css'>
 
-    <!-- Favicon -->
+    <!-- Favicon /Logo Image -->
     <link rel="icon" href="img/favicon.png">
     
     <!-- Custom CSS -->
@@ -33,19 +33,17 @@
     <link rel="stylesheet" href="css/swiper_style.css">
 
      <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
-    
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
+        
     <title>One to Save</title>
+
 </head>
 
 <body>
     <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
-        <a href="#" class="navbar-brand" ><img src="img/favicon.png" alt="OneToSave logo" width="30" height="30" class="d-inline-block align-top">ONE TO SAVE</a>
+        <a href="index.html" class="navbar-brand" ><img src="img/favicon.png" alt="OneToSave logo" width="30" height="30" class="d-inline-block align-top">ONE TO SAVE</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -59,33 +57,23 @@
                 </li>
                 <li class="nav-item">
                     <a href="charities.html" class="nav-link">CHARITIES</a>
-                    <li class="nav-item">                         
-                        <button class="accordion">NEWS</button>
-                        <div class ="panel">
-                            <a href="unicef.html" class="nav-link">UNICEF</a>
-                            <a href="who.html" class="nav-link">WHO</a>
-                            <a href="pbs.html" class="nav-link">PBS</a>
-                            <a href="wwf.html" class="nav-link">WWF</a>
-                            <a href="npr.html" class="nav-link">NPR</a>
-                            <a href="st.html" class="nav-link">SEATTLE TIMES</a>
-                    </div>
                 </li>
-                <!-- <li class="nav-item dropdown">
-                    <a class="nav-link" id="navbarDropdown1" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">NEWS</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                        <li><a class="dropdown-item" href="news.html"></a>UNICEF</li>
-                        <li><a class="dropdown-item" href="who.html"></a>WHO</li>
-                        <li><a class="dropdown-item" href="pbs.html"></a>PBS</li>
-                        <li><a class="dropdown-item" href="wwf.html"></a>WWF</li>
-                        <li><a class="dropdown-item" href="cdc.html"></a>CDC</li>
-                        <li><a class="dropdown-item" href="st.html"></a>SEATTLE TIMES</li>
-                    </ul>
-                </li> -->
-                <form class="form-inline my-2 my-lg-0 ml-auto search-form">
-                    <span class="fa fa-search form-control-feedback"></span>
-                    <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search" aria-label="Search">
-                  </form>
+                <li class="nav-item">                         
+                    <button class="accordion">NEWS</button>
+                    <div class ="panel">
+                        <a href="unicef.html" class="nav-link">UNICEF</a>
+                        <a href="who.html" class="nav-link">WHO</a>
+                        <a href="pbs.html" class="nav-link">PBS</a>
+                        <a href="wwf.html" class="nav-link">WWF</a>
+                        <a href="npr.html" class="nav-link">NPR</a>
+                        <a href="st.html" class="nav-link">SEATTLE TIMES</a>
+                </div>
+                </li>
             </ul>
+            <form class="form-inline my-2 my-lg-0 ml-auto search-form" action = "search.html">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search" aria-label="Search">
+            </form>
         </div>
     </nav>
 
@@ -104,13 +92,12 @@
                 </div>
                 
                 <div class="swiper-slide" style="background-image: url(https://c402277.ssl.cf1.rackcdn.com/photos/18855/images/story_full_width/shutterstock_1627641238-_Converted_.jpg?1586182432);">
-                    <h2>Why we must close wildlife market during this season?</h2>
+                    <h2>Why we must close wildlife market during this season?<a></a></h2>
                     <!-- https://www.worldwildlife.org/stories -->
                 </div>
                 
                 <div class="swiper-slide" style="background-image: url(https://www.redcross.org/content/dam/redcross/about-us/news/2020/12757-094.jpg);">
-                    <a href="https://www.redcross.org/about-us/news-and-events/news/2020/red-cross-responds-to-tornadoes-in-south-as-storms-move-north.html"><h2>RedCross Respond to the Deadliest Tornado Season</h2>
-                    </a> 
+                    <h2>International community rallies to fight COVID-19.</h2>
                 </div>
                 
                 <div class="swiper-slide" style="background-image: url(https://images.squarespace-cdn.com/content/v1/5b8989d231d4df1bccd7bcc7/1579208506198-JYNTZGLAJID6JNMSAY79/ke17ZwdGBToddI8pDm48kEqdD9hgMh4qvHI-NIzDtul7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0geeCvn1f36QDdcifB7yxGhXXOgqmEyq92ouv5N31cVQimtt9TnJcnRvNyI23Mkj5g/DSC06949.jpg?format=2500w);">
@@ -199,7 +186,7 @@
                             in a simple accessible way, one does not need to visit multiple websites to 
                             gain information or to donate to
                             different causes.</p>
-                        <p><a href="news.html">  Learn more >></a></p>
+                        <p><a href="unicef.html">  Learn more >></a></p>
                     </div>
                 </div>
             </div>
@@ -216,12 +203,12 @@
                         <h3>SUBSCRIBE</h3>
                     </div>
                     <div class="mb-25">
-                        <p>Don’t miss to subscribe to our new feeds.</p>
+                        <p>Don’t miss to subscribe to our news feeds.</p>
                     </div>
                 </div>
                 <div class = "col-xl-6 col-md-6 mb-30 mt-30">
                     <div class="subscribe-form">
-                    <form id="subscribeC">
+                    <form id="subscribe">
                         <input type="text" name="address" placeholder="Email Address" required>
                         <button><i class="fab fa-telegram-plane"></i></button>
                     </form>
@@ -238,7 +225,7 @@
                             <a href="index.html"><img src="img/logo.png" class="img-fluid" alt="logo"></a>
                         </div>
                         <div class="footer-text">
-                            <p>Our organization is dedicated to reach out to those in need.</p>
+                            <p>Our organization is dedicated to reach out for those in need.</p>
                         </div>
                     </div>
                 </div>
@@ -280,36 +267,36 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         
         <!-- transparent effect on the navbar -->
-    <script>
-        $(function () {
-            $(document).scroll(function () {
-                var $nav = $("#mainNavbar");
-                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        <script>
+            $(function () {
+                $(document).scroll(function () {
+                    var $nav = $("#mainNavbar");
+                    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+                });
             });
-        });
-    </script>
+        </script>
+
         <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js'></script>
         <script  src="js/script.js"></script>
 
        <script>
-       var acc = document.getElementsByClassName("accordion");
-        var i;
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-        /*Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                /*Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
 
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+                });
+            }
+        </script>
     </body>
-
 </html>
