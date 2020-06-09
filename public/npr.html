@@ -13,21 +13,32 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-      
+
     <!-- Google Font CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap" rel="stylesheet">
+        
+    <!-- Favicon / Logo image -->
+    <link rel="icon" href="img/favicon.png">
 
     <!-- Custom CSS -->
-      
-        <link rel= "stylesheet" type="text/css" href="css/home.css"> 
-        <link rel= "stylesheet" type="text/css" href="css/news.css"> 
-       
+    <link rel= "stylesheet" type="text/css" href="css/home.css"> 
+    <link rel= "stylesheet" type="text/css" href="css/news.css">
 
-        <title>Charities</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.4/firebase-analytics.js"></script>
+
+
+    <title>NPR</title>
+
     </head>
     <body>
     <nav id="mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
-        <a href="#" class="navbar-brand" ><img src="img/favicon.png" alt="OneToSave logo" width="30" height="30" class="d-inline-block align-top">ONE TO SAVE</a>
+        <a href="index.html" class="navbar-brand" ><img src="img/favicon.png" alt="OneToSave logo" width="30" height="30" class="d-inline-block align-top">ONE TO SAVE</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,27 +52,31 @@
                 </li>
                 <li class="nav-item">
                     <a href="charities.html" class="nav-link">CHARITIES</a>
-                    <li class="nav-item">                         
-                        <button class="accordion">NEWS</button>
-                        <div class ="panel">
-                            <a href="unicef.html" class="nav-link">UNICEF</a>
-                            <a href="who.html" class="nav-link">WHO</a>
-                            <a href="pbs.html" class="nav-link">PBS</a>
-                            <a href="wwf.html" class="nav-link">WWF</a>
-                            <a href="npr.html" class="nav-link">NPR</a>
-                            <a href="st.html" class="nav-link">SEATTLE TIMES</a>
-
-                        </div>
+                </li>ß
+                <li class="nav-item">                         
+                    <button class="accordion">NEWS</button>
+                    <div class ="panel">
+                        <a href="unicef.html" class="nav-link">UNICEF</a>
+                        <a href="who.html" class="nav-link">WHO</a>
+                        <a href="pbs.html" class="nav-link">PBS</a>
+                        <a href="wwf.html" class="nav-link">WWF</a>
+                        <a href="npr.html" class="nav-link">NPR</a>
+                        <a href="st.html" class="nav-link">SEATTLE TIMES</a>
+                    </div>
                 </li>
             </ul>
+            <form class="form-inline my-2 my-lg-0 ml-auto search-form" action = "search.html">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search" aria-label="Search">
+            </form>
         </div>
     </nav>
     <section class="container-news">            
-                    <div class = "new-link">
-                        <a href="https://www.npr.org/sections/news/"> <img src= "img/npr.png" alt="NPR"> 
-                        </a>
-                    </div>
-                     
+        <div class = "new-link">
+            <a href="https://www.npr.org/sections/news/"> <img src= "img/npr.png" alt="NPR"> 
+            </a>
+        </div>
+            
     </section>
     <section class = "container-fluid">
         <div class="row-section1">
@@ -92,8 +107,8 @@
                 </div>
                 <div class = "col-xl-6 col-md-6 mb-30 mt-30">
                     <div class="subscribe-form">
-                    <form action="#">
-                        <input type="text" placeholder="Email Address">
+                    <form id = "subscribe">
+                        <input type="text" name="address" placeholder="Email Address" required>
                         <button><i class="fab fa-telegram-plane"></i></button>
                     </form>
                 </div>
@@ -163,24 +178,24 @@
         <script  src="js/script.js"></script>
 
        <script>
-       var acc = document.getElementsByClassName("accordion");
-        var i;
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-        /*Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                /*Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
 
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+                });
+            }
+        </script>
     </body>
 
 </html>
